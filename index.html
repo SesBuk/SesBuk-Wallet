@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Active Wallet</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#111827,#1f2937);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:400px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border-radius:25px;
+padding:25px;
+color:#fff;
+box-shadow:0 20px 40px rgba(0,0,0,.4);
+border:1px solid rgba(255,255,255,.1);
+}
+
+.demo{
+background:#f59e0b;
+display:inline-block;
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.profile{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:20px;
+}
+
+.avatar{
+width:60px;
+height:60px;
+border-radius:50%;
+background:#3b82f6;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+}
+
+.name{
+font-size:22px;
+font-weight:700;
+}
+
+.status{
+color:#22c55e;
+font-size:14px;
+}
+
+.balance{
+margin:25px 0;
+background:linear-gradient(45deg,#2563eb,#06b6d4);
+padding:20px;
+border-radius:18px;
+}
+
+.balance small{
+opacity:.8;
+}
+
+.amount{
+font-size:36px;
+font-weight:bold;
+margin-top:8px;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+button{
+flex:1;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.deposit{
+background:#22c55e;
+color:white;
+}
+
+.withdraw{
+background:#ef4444;
+color:white;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.history{
+margin-top:30px;
+}
+
+.history h3{
+margin-bottom:15px;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.green{
+color:#22c55e;
+}
+
+.red{
+color:#ef4444;
+}
+
+.footer{
+margin-top:25px;
+text-align:center;
+font-size:12px;
+opacity:.7;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="demo">UI PREVIEW</div>
+
+<div class="profile">
+
+<div class="avatar">M</div>
+
+<div>
+<div class="name">Customer Name</div>
+<div class="status">● Active Member</div>
+</div>
+
+</div>
+
+<div class="balance">
+<small>Wallet Balance</small>
+<div class="amount">$2,450.75</div>
+</div>
+
+<div class="buttons">
+
+<button class="deposit"
+onclick="alert('Demo UI only')">
+Deposit
+</button>
+
+<button class="withdraw"
+onclick="alert('Active')">
+Withdraw
+</button>
+
+</div>
+
+<div class="history">
+
+<h3>Recent Activity</h3>
+
+<div class="item">
+<span>Balance Deposit</span>
+<span class="green">+$500</span>
+</div>
+
+<div class="item">
+<span>Balance Withdrawal</span>
+<span class="red">-$120</span>
+</div>
+
+<div class="item">
+<span>Balance Bonus</span>
+<span class="green">+$50</span>
+</div>
+
+</div>
+
+<div class="footer">
+Wallet Dashboard • Active Account • Active Data
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
